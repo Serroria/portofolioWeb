@@ -1,0 +1,89 @@
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #7F55B1
+}
+
+.nav-menu{
+    display: flex;
+}
+.nav-menu li {
+    padding: 0 1rem;
+    transition: all 250ms;
+    overflow: hidden;
+}
+/* .nav-menu li::before {
+    content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #dcea7f;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+
+} */
+
+.nav-menu li:hover {
+    background-color: #dcea7f;
+    border-radius: 60px;
+    color: #7F55B1;
+}
+
+.nav-menu li:hover::before {
+ width: 100%;
+}
+.nav-menu li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* From Uiverse.io by alexroumi */ 
+.btn-hero{
+ padding: 12px 13px;
+ border: unset;
+ border-radius: 15px;
+ color: #f2f2f2;
+ z-index: 1;
+background: #7F55B1;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+
+.btn-hero::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #dcea7f;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+
+.btn-hero:hover {
+  color: #7F55B1;
+}
+
+.btn-hero:hover::before {
+ width: 100%;
+}
+
