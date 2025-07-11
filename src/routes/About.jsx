@@ -1,16 +1,22 @@
 import React from "react";
-import logo from "../../public/cat.png";
+import logo from "../../public/me.jpg";
+import pict from "../../public/angelacurate.png";
 
 const About = () => {
   return (
+    <>
+    
     <section className="about min-h-screen" id="about">
+      <div className="flex justify-center scale-50 ">
+        <img src= {pict} className=" animate-bounce duration-[9000ms]"/>
+      </div>
       <div>
-        <div className="p-5 box-content md:box-border shadow-md flex flex-row  min-h-screen  font-balsamiq">
-          <div>
-            <img src={logo} alt="logo" className="basis-1/3" />
+        <div className="p-5 box-content md:box-border shadow-md flex flex-col md:flex-row  min-h-screen  font-balsamiq flex justify-center">
+          <div className="p-10 md:p-20 flex justify-center">
+            <img src={logo} alt="logo" className=" m-10 md:m-20 basis-1/3 rounded-xl  w-100 h-100 object-cover" />
           </div>
-          <div className="basis-2/3 p-5 mt-10 text-2xl">
-            <div className="p-5 text-justify">
+          <div className="basis-2/3 p-5 text-2xl">
+            <div className="p-5 mt-5px text-justify">
               <h2 className="text-center mb-4 text-5xl font-[1000]">Who am I?</h2>
               <p>
                 Hi, I'm Merylien Jovanda — a college student at Singaperbangsa
@@ -23,31 +29,29 @@ const About = () => {
                 most effective way to grow.
               </p>
             </div>
-
-            <div className="contents flex flex-row p-5 text-white">
-              <div className="p-5 box-content md:box-border shadow-md flex-1 rounded-sm mr-5 bg-[#F49BAB]">
-                <h4 className="text-center">Personal Info</h4>
-                <ul>
-                  <li>Name : Merylien Jovanda </li>
-                  <li>email : merylien.jovanda14@gmail.com </li>
-                  <li>Location : Jonggol, Bogor </li>
-                </ul>
+<h2 className="text-center mb-4 text-5xl font-[1000]">My interest</h2>
+            <div className="contents overflow-hidden flex flex-row p-5 text-ungu">
+              
+              <div className="p-5 box-content md:box-border shadow-md flex-1 rounded-sm mr-5 bg-white ">
+                
+                <h4 className="font-bold text-center ">Web Dev</h4>
               </div>
 
-              <div className="p-5 box-content md:box-border shadow-md flex-1 rounded-sm bg-[#F49BAB]">
-                <h4 className="text-center">My interest</h4>
-                <ul>
-                  <li>Web Development</li>
-                  <li>Character Design</li>
-                </ul>
+              <div className="p-5 box-content md:box-border shadow-md flex-1 rounded-sm bg-white">
+                <h4 className="font-bold text-center ">Character Illust</h4>
               </div>
             </div>
-
-            <button className="cursor-pointer">Download CV</button>
+<div className="flex justify-center">
+    <button className=" p-5 btn-hero">
+             Download Cv
+            </button>
+</div>
+             
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 };
 

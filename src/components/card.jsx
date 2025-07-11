@@ -13,7 +13,7 @@ const Card = ({imgURL, title, desc, alt}) => {
     <h2 className="card-title">{title}</h2>
     <p>{desc}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Lihat</button>
     </div>
   </div>
 </div>

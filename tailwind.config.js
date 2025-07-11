@@ -10,7 +10,14 @@ export default defineConfig({
     extend: {
       fontFamily: {
         balsamiq: ['"Balsamiq Sans"', 'sans-serif'],
+      },
+      colors: {
+        kuning : {
+          muda: '#fece0d',
+        
+        }
       }
+      
     },
   },
   plugins: [daisyui],

@@ -3,16 +3,19 @@ import Card from "../components/card";
 
 const Skills = () => {
   return (
-    <section className="skills min-h-screen bg-[#563A9C] font-balsamiq">
-    <div className="md:box-border flex-1 p-5 box-content md:box-border rounded-sm mr-5 text-[#7F55B1] font-bold ">
-      <h1 className="text-[#F49BAB] text-4xl text-center">My Skill</h1>
+    <section className="skills min-h-6 bg-[#563A9C] font-balsamiq">
+    <div className="md:box-border flex-1 p-5 box-content md:box-border rounded-sm mr-5 text-ungu font-bold ">
+      <h1 className="text-white text-4xl text-center font-bold ">My Skill</h1>
+      <div className="relative mx-2 my2 flex justify-center">
+        <div className="mt-2 mb-2 flex w-20 h-1 overflow-hidden rounded bg-white "></div>
+      </div>
+      <p className="p-4 text-center text-white text-sm" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati iusto inventore vel, quibusdam et amet laborum voluptate. Molestiae sequi laboriosam itaque dolorum, voluptatem nobis provident aut soluta. Tempora, perspiciatis eius.</p>
       <div>
-        <h3 className="text-[#F49BAB]">Programming</h3>
         <ul className="contents grid grid-cols-3 grid-rows-3 gap-4 ">
           <li>
-            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-5 bg-[#cdda7f]">
+            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-1 bg-white">
               <h4>Html</h4>
-              <div className="relative mx-5 my-10">
+              <div className="relative mx-5 my-2">
                 <div className=" mb-4 flex h-5 overflow-hidden rounded bg-gray-100 text-xs">
                   <div
                     style={{ width: "80%" }}
@@ -27,9 +30,9 @@ const Skills = () => {
             </div>
           </li>
           <li>
-            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-5  bg-[#cdda7f]">
+            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-1  bg-white">
               <h4>CSS</h4>
-              <div className="relative mx-5 my-10">
+              <div className="relative mx-5 my-2">
                 <div className=" mb-4 flex h-5 overflow-hidden rounded bg-gray-100 text-xs">
                   <div
                     style={{ width: "40%" }}
@@ -43,9 +46,9 @@ const Skills = () => {
             </div>
           </li>
           <li>
-            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-5 bg-[#cdda7f]">
+            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-1 bg-white">
               <h4>Javascript</h4>
-              <div className="relative mx-5 my-10">
+              <div className="relative mx-5 my-2">
                 <div className=" mb-4 flex h-5 overflow-hidden rounded bg-gray-100 text-xs">
                   <div
                     style={{ width: "20%" }}
@@ -59,9 +62,9 @@ const Skills = () => {
             </div>
           </li>
           <li>
-            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-5  bg-[#cdda7f]">
+            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-1  bg-white">
               <h4>PHP</h4>
-              <div className="relative mx-5 my-10">
+              <div className="relative mx-5 my-2">
                 <div className=" mb-4 flex h-5 overflow-hidden rounded bg-gray-100 text-xs">
                   <div
                     style={{ width: "20%" }}
@@ -75,9 +78,9 @@ const Skills = () => {
             </div>
           </li>
           <li>
-            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-5 bg-[#cdda7f]">
+            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-1 bg-white">
               <h4>Laravel</h4>
-              <div className="relative mx-5 my-10">
+              <div className="relative mx-5 my-2">
                 <div className=" mb-4 flex h-5 overflow-hidden rounded bg-gray-100 text-xs">
                   <div
                     style={{ width: "40%" }}
@@ -91,9 +94,9 @@ const Skills = () => {
             </div>
           </li>
           <li>
-            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-5 bg-[#cdda7f]">
+            <div className="md:box-border shadow-md flex-1 rounded-sm mr-5 p-1 bg-white">
               <h4>React</h4>
-              <div className="relative mx-5 my-10">
+              <div className="relative mx-5 my-2">
                 <div className=" mb-4 flex h-5 overflow-hidden rounded bg-gray-100 text-xs">
                   <div
                     style={{ width: "10%" }}
@@ -108,18 +111,7 @@ const Skills = () => {
           </li>
         </ul>
       </div>
-
-      <div>
-        <h3 className="text-white">Drawing</h3>
-        <div className="cardi m-5 basis-1/3">
-          <Card
-            imgURL="https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp"
-            alt="ini yato"
-            title="Yato"
-            desc="hmmm"
-          />
-        </div>
-      </div>
+     
     </div>
     </section>
   );
