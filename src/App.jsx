@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import "./index.css";
 import Home from "./routes/home";
 import About from "./routes/About";

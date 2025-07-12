@@ -5,14 +5,19 @@ import pict from "../../public/angelacurate.png";
 const About = () => {
   return (
     <>
+   
     
-    <section className="about min-h-screen" id="about">
-      <div className="flex justify-center scale-50 ">
-        <img src= {pict} className=" animate-bounce duration-[9000ms]"/>
+    <section className="about  min-h-[600px] " id="about"
+         style={{
+            backgroundImage: "url(/tes2.jpg)",
+          }}>
+      
+      <div className="flex  justify-center -mb-50 -mt-7">
+        <img src= {pict} className="w-[920px] h-auto "/>
       </div>
       <div>
-        <div className="p-5 box-content md:box-border shadow-md flex flex-col md:flex-row  min-h-screen  font-balsamiq flex justify-center">
-          <div className="p-10 md:p-20 flex justify-center">
+        <div className="p-5 box-content md:box-border shadow-md flex flex-col md:flex-row min-h-fit font-balsamiq justify-center">
+          <div className="pl-10 pr-10 pt-20 flex flex-col sm:pr-20 sm:pl-20 sm:justify-center">
             <img src={logo} alt="logo" className=" m-10 md:m-20 basis-1/3 rounded-xl  w-100 h-100 object-cover" />
           </div>
           <div className="basis-2/3 p-5 text-2xl">

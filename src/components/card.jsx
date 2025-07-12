@@ -1,6 +1,6 @@
 const Card = ({imgURL, title, desc, alt}) => {
     return(
-        <div>
+        <div className="">
             <div className="card bg-base-100 w-70 shadow-sm">
   <figure>
     <img
