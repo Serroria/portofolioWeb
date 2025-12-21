@@ -4,10 +4,11 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  server : {
+  base: "/portofolioWeb",
+  server: {
     historyApiFallback: true,
   },
-    resolve: {
-    extensions: ['.js', '.jsx']
-  }
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
 });

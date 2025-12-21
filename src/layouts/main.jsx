@@ -1,21 +1,19 @@
-import Navbar from "../components/Navbar"
-import Footer from "../components/footer"
-const Layout = ({ children }) => {
-    return (
-        <div>
-            <header>
-            <Navbar />
-            </header>
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 
-            <main>
-               {children} 
-               
-            </main>
+const Layout = () => {
+  return (
+    <div>
+      <header>
+        <Navbar />
+      </header>
 
-            <Footer />
-        </div>
-        
-    )
-}
+      <Outlet />
+      <Footer />
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

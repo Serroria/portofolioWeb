@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import "./index.css";
 import Home from "./routes/home";
 import About from "./routes/About";
@@ -10,15 +10,14 @@ import Layout from "./layouts/main";
 function App() {
   return (
     <Layout>
-    <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/project" element={<Project />} />
-     
-    </Routes>
-    
+      <Routes>
+        <Route element={<Layout />} />
+
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/project" element={<Project />} />
+      </Routes>
     </Layout>
   );
 }
