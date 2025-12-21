@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import ProjectModal from "../components/ProjectModal";
 
-const Card = ({ imgURL, title, desc, alt }) => {
+const Card = ({ imgURL, title, desc, alt, data }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const project = [];
 
   const handleViewProject = () => {
-    selectedProject(project);
+    setSelectedProject(data);
   };
 
   const closeModal = () => {
@@ -18,16 +18,17 @@ const Card = ({ imgURL, title, desc, alt }) => {
     <div className="flex justify-between">
       <div className="card bg-base-100 w-70 shadow-sm">
         <figure>
-          <img src={imgURL} alt={alt} className="h-48 w-96 object-cover" />
+          <img
+            src={data.imgURL}
+            alt={data.alt}
+            className="h-48 w-96 object-cover"
+          />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{title}</h2>
+          <h2 className="card-title">{data.title}</h2>
           <p>{desc}</p>
           <div className="card-actions justify-end">
-            <button
-              className="btn btn-primary"
-              onClick={handleViewProject(project)}
-            >
+            <button className="btn btn-primary" onClick={handleViewProject}>
               Lihat Detail
             </button>
           </div>
