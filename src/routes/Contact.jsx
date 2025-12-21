@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import pict from "../../public/angelacurate2.png";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
   function sendEmail(e) {
     e.preventDefault();
 
@@ -10,14 +11,18 @@ const Contact = () => {
       .sendForm(
         "service_g4hruua",
         "template_0cq4cbm",
-        e.target,
+        form.current,
         "o-5T1S63X-uMie4t7"
       )
       .then(
-        () => alert("Pesan Terkirim"),
+        (result) => {
+          console.log(result.text);
+          alert("Pesan Terkirim");
+          e.target.reset();
+        },
         (error) => {
           console.error(error);
-          alert("Gagal mengirim");
+          alert("Gagal mengirim: " + JSON.stringify(error));
         }
       );
   }
@@ -41,17 +46,19 @@ const Contact = () => {
           </div>
           <div className="p-5 shadow-md bg-white w-100 text-ungu">
             <form
+              ref={form}
               className="md:flex md:items-center mb-6 "
               onSubmit={sendEmail}
             >
               <div className="md:flex-col md:items-center mb-6">
-                <label className="my-8" name="name" for="inline-full-name">
+                <label className="my-8" for="inline-full-name">
                   Name:
                 </label>
                 <div className="md:w-2/3">
                   <input
                     className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="text"
+                    name="name"
                     placeholder="Isi nama"
                     required
                   />
@@ -64,6 +71,7 @@ const Contact = () => {
                     type="email"
                     required
                     placeholder="write your email"
+                    name="email"
                   />
                 </div>
                 <label>Description:</label>
