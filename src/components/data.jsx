@@ -15,19 +15,25 @@ export const projects = [
     imgURL:
       "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
     tipe: "illust",
-    title: "Yato",
+    title: "",
     desc: "hmmm",
     alt: "gambar sepatu",
   },
 
   {
     id: 3,
-    imgURL:
-      "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
+    imgURL: "/portofolioWeb/img/logoMyready.png",
     tipe: "web",
-    title: "Yato",
-    desc: "hmmm",
+    title: "MYREADY",
+    desc: "Website pendaftaran lomba dan seminar",
     alt: "gambar sepatu",
+    images: [
+      "/portofolioWeb/img/DashboardUtamaAdmin.png",
+      "/portofolioWeb/img/formLomba.png",
+      "/portofolioWeb/img/formWebinar.png",
+      "/portofolioWeb/img/HalamanDataLomba.png",
+      "/portofolioWeb/img/manajemenAdmin.png",
+    ],
   },
 
   {
@@ -45,8 +51,8 @@ export const projects = [
     imgURL:
       "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
     tipe: "web",
-    title: "Yato",
-    desc: "hmmm",
+    title: "Web Portofolio",
+    desc: "Web portofolio dan deskripsi singkat diri",
     alt: "gambar sepatu",
   },
 ];
