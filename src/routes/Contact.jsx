@@ -1,7 +1,27 @@
 import React from "react";
 import pict from "../../public/angelacurate2.png";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_g4hruua",
+        "template_0cq4cbm",
+        e.target,
+        "o-5T1S63X-uMie4t7"
+      )
+      .then(
+        () => alert("Pesan Terkirim"),
+        (error) => {
+          console.error(error);
+          alert("Gagal mengirim");
+        }
+      );
+  }
+
   return (
     <section className="p-5 mb-5 min-h-[600px] bg-[#563A9C] font-balsamiq">
       <div className="gap-10">
@@ -20,17 +40,20 @@ const Contact = () => {
             </p>
           </div>
           <div className="p-5 shadow-md bg-white w-100 text-ungu">
-            <form className="md:flex md:items-center mb-6 ">
+            <form
+              className="md:flex md:items-center mb-6 "
+              onSubmit={sendEmail}
+            >
               <div className="md:flex-col md:items-center mb-6">
-                <label className="my-8" for="inline-full-name">
+                <label className="my-8" name="name" for="inline-full-name">
                   Name:
                 </label>
                 <div className="md:w-2/3">
                   <input
                     className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="text"
+                    placeholder="Isi nama"
                     required
-                    value="Isi nama"
                   />
                 </div>
                 <br />
@@ -38,7 +61,7 @@ const Contact = () => {
                 <div className="bg-gray">
                   <input
                     className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                    type="text"
+                    type="email"
                     required
                     placeholder="write your email"
                   />
@@ -47,7 +70,7 @@ const Contact = () => {
                 <div>
                   <input
                     className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                    type="textarea"
+                    name="message"
                     placeholder="Test"
                   />
                 </div>
@@ -55,8 +78,8 @@ const Contact = () => {
                   <div class="md:w-1/3"></div>
                   <div class="md:w-2/3">
                     <button
-                      class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                      type="button"
+                      className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                      type="submit"
                     >
                       Sign Up
                     </button>
