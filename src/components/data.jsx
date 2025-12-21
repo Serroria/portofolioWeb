@@ -7,7 +7,7 @@ export const projects = [
     title: "Website JamuKita",
     desc: "hmmm",
     alt: "JamuKita",
-    images: ["/img/tes1.png", "/img/tes1.png"],
+    images: ["/portofolioWeb/img/tes1.png", "/portofolioWeb/img/tes1.png"],
   },
 
   {
@@ -53,7 +53,7 @@ export const projects = [
 
 export const button = [
   {
-    name: "ALl",
+    name: "ALL",
     value: "all",
   },
   {

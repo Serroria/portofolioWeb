@@ -28,7 +28,7 @@ const ProjectModel = ({ project, onClose }) => {
             ❮
           </button>
           <img
-            src="{project.images[currentIndex]}"
+            src={project.images[currentIndex]}
             alt={`Slide ${currentIndex}`}
             className="carousel-image"
           />
