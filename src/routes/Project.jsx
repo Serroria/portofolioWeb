@@ -26,25 +26,22 @@ function Project() {
             <div className="mt-2 mb-2 flex w-20 h-1 overflow-hidden rounded bg-white "></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            quo provident maiores doloribus, ducimus sint odit nesciunt pariatur
-            nulla enim, modi doloremque sunt accusamus blanditiis unde ad
-            aspernatur corporis dolores.
+            Kumpulan-kumpulan project yang telah di bangun oleh saya menggunakan
+            beberapa tools yang saya kuasai.
           </p>
 
           <div className="text-ungu p-2 flex flex-row justify-center ">
             <div className=" p-5 m-2px ">
               {button &&
                 button.map((type, index) => (
-               
-                    <button className="m-5 btn-hero"
-                      key={index}
-                      value={type.value}
-                      onClick={handleProject}
-                    >
-                      {type.name}
-                    </button>
-                
+                  <button
+                    className="m-5 btn-hero"
+                    key={index}
+                    value={type.value}
+                    onClick={handleProject}
+                  >
+                    {type.name}
+                  </button>
                 ))}
             </div>
           </div>
