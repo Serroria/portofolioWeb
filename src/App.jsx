@@ -9,16 +9,14 @@ import Layout from "./layouts/main";
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route element={<Layout />} />
-
+    <Routes>
+      <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project" element={<Project />} />
-      </Routes>
-    </Layout>
+      </Route>
+    </Routes>
   );
 }
 
