@@ -31,11 +31,11 @@ function Project() {
           </p>
 
           <div className="text-ungu p-2 flex flex-row justify-center ">
-            <div className=" p-5 m-2px ">
+            <div className=" p-5 m-2px  ">
               {button &&
                 button.map((type, index) => (
                   <button
-                    className="m-5 btn-hero"
+                    className="m-5 btn-hero border-solid border-indigo-900"
                     key={index}
                     value={type.value}
                     onClick={handleProject}
@@ -46,7 +46,7 @@ function Project() {
             </div>
           </div>
         </div>
-        <div className="p-5 flex flex-wrap gap-5 justify-center ">
+        <div className="p-5 flex flex-wrap gap-5  place-content-center ">
           {filteredProject &&
             filteredProject.map((type) => (
               <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 " key={type.id}>

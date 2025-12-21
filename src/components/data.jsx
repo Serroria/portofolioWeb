@@ -1,13 +1,24 @@
 export const projects = [
   {
     id: 1,
-    imgURL:
-      "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
+    imgURL: "/portofolioWeb/img/Jamukita.png",
     tipe: "web",
     title: "Website JamuKita",
     desc: "hmmm",
     alt: "JamuKita",
-    images: ["/portofolioWeb/img/tes1.png", "/portofolioWeb/img/tes1.png"],
+    images: [
+      "/portofolioWeb/img/Jamukita.png",
+      "/portofolioWeb/img/Jamukita1.jpg",
+      "/portofolioWeb/img/Jamukita2.jpg",
+      "/portofolioWeb/img/Jamukita3.jpg",
+      "/portofolioWeb/img/Jamukita4.jpg",
+      "/portofolioWeb/img/Jamukita5.jpg",
+      "/portofolioWeb/img/Jamukita6.jpg",
+      "/portofolioWeb/img/Jamukita7.jpg",
+      "/portofolioWeb/img/Jamukita8.jpg",
+      "/portofolioWeb/img/Jamukita9.jpg",
+      "/portofolioWeb/img/Jamukita10.jpg",
+    ],
   },
 
   {
