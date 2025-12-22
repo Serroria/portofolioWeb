@@ -40,23 +40,23 @@ const Contact = () => {
             <h3>Quick Contact</h3>
             <h1 className="text-6xl">Leave a Message</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Asperiores totam qui nobis natus! Optio beatae
+              Have an idea, a project, or just want to say hello? Drop a message
+              below and let’s turn your thoughts into something meaningful
             </p>
           </div>
-          <div className="p-5 shadow-md bg-white w-100 text-ungu">
+          <div className="p-5 shadow-md bg-white w-100 text-ungu rounded-2xl">
             <form
               ref={form}
               className="md:flex md:items-center mb-6 "
               onSubmit={sendEmail}
             >
-              <div className="md:flex-col md:items-center mb-6">
+              <div className="md:flex-col md:items-center mb-6 items-center">
                 <label className="my-8" for="inline-full-name">
                   Name:
                 </label>
                 <div className="md:w-2/3">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="text"
                     name="name"
                     placeholder="Isi nama"
@@ -67,7 +67,7 @@ const Contact = () => {
                 <label className="my-8">Email:</label>
                 <div className="bg-gray">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="email"
                     required
                     placeholder="write your email"
@@ -77,12 +77,12 @@ const Contact = () => {
                 <label>Description:</label>
                 <div>
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     name="message"
                     placeholder="Test"
                   />
                 </div>
-                <div class="md:flex md:items-center">
+                <div class="md:flex md:items-center py-9">
                   <div class="md:w-1/3"></div>
                   <div class="md:w-2/3">
                     <button

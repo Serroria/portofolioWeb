@@ -15,8 +15,8 @@ const Card = ({ imgURL, title, desc, alt, data }) => {
   };
 
   return (
-    <div className="flex justify-between">
-      <div className="card bg-base-100 w-70 shadow-sm">
+    <div className="flex flex-row flex-wrap ">
+      <div className="card bg-base-100 w-70 shadow-sm ">
         <figure>
           <img
             src={data.imgURL}

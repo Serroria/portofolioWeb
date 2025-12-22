@@ -49,7 +49,10 @@ function Project() {
         <div className="p-5 flex flex-wrap gap-5  place-content-center ">
           {filteredProject &&
             filteredProject.map((type) => (
-              <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 " key={type.id}>
+              <div
+                className="w-full flex flex-row flex-wrap sm:w-1/2 md:w-1/3 lg:w-1/4 md:grid-cols-3 gap-4 "
+                key={type.id}
+              >
                 <Card
                   data={type}
                   // imgURL={type.imgURL}
