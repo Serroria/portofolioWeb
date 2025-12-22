@@ -44,19 +44,19 @@ const Contact = () => {
               below and let’s turn your thoughts into something meaningful
             </p>
           </div>
-          <div className="p-5 shadow-md bg-white w-100 text-ungu rounded-2xl">
+          <div className="p-5 shadow-md bg-white w-100 text-ungu rounded-2xl items-center">
             <form
               ref={form}
               className="md:flex md:items-center mb-6 "
               onSubmit={sendEmail}
             >
-              <div className="md:flex-col md:items-center mb-6 items-center">
+              <div className="md:flex-col md:items-center mb-6 ">
                 <label className="my-8" for="inline-full-name">
                   Name:
                 </label>
                 <div className="md:w-2/3">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded py-2 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="text"
                     name="name"
                     placeholder="Isi nama"
@@ -67,7 +67,7 @@ const Contact = () => {
                 <label className="my-8">Email:</label>
                 <div className="bg-gray">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="email"
                     required
                     placeholder="write your email"
@@ -77,7 +77,7 @@ const Contact = () => {
                 <label>Description:</label>
                 <div>
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     name="message"
                     placeholder="Test"
                   />
