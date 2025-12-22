@@ -77,7 +77,7 @@ const Contact = () => {
                 <label>Description:</label>
                 <div>
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="bg-gray-200 border-2 border-gray-200 rounded  py-10 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     name="message"
                     placeholder="Test"
                   />
@@ -89,7 +89,7 @@ const Contact = () => {
                       className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                       type="submit"
                     >
-                      Sign Up
+                      Send
                     </button>
                   </div>
                 </div>
