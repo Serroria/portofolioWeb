@@ -54,9 +54,8 @@ const Contact = () => {
                 <label className="my-8" for="inline-full-name">
                   Name:
                 </label>
-                <div className="md:w-2/3">
+                <div className="md:w-2/3 bg-gray-200 border-2 border-gray-200 rounded py-2 w-full text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded py-2 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="text"
                     name="name"
                     placeholder="Isi nama"
@@ -65,9 +64,8 @@ const Contact = () => {
                 </div>
                 <br />
                 <label className="my-8">Email:</label>
-                <div className="bg-gray">
+                <div className="bg-gray-200 border-2 border-gray-200 rounded  py-2 w-full text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded  py-2 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                     type="email"
                     required
                     placeholder="write your email"
@@ -75,9 +73,9 @@ const Contact = () => {
                   />
                 </div>
                 <label>Description:</label>
-                <div>
+                <div className="bg-gray-200 border-2 border-gray-200 rounded  py-10 px-1 text-gray-700 leading-tight ">
                   <input
-                    className="bg-gray-200 border-2 border-gray-200 rounded  py-10 px-15 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                    className="w-full py-8 focus:outline-none  focus:border-purple-500"
                     name="message"
                     placeholder="Test"
                   />
