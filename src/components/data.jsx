@@ -23,12 +23,12 @@ export const projects = [
 
   {
     id: 2,
-    imgURL:
-      "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
+    imgURL: "/portofolioWeb/img/cattburn.png",
     tipe: "illust",
     title: "",
     desc: "hmmm",
     alt: "gambar sepatu",
+    images: ["/portofolioWeb/img/cattburn.png"],
   },
 
   {
@@ -49,22 +49,52 @@ export const projects = [
 
   {
     id: 4,
-    imgURL:
-      "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
+    imgURL: "/portofolioWeb/img/gamabr2.png",
     tipe: "illust",
-    title: "Yato",
-    desc: "hmmm",
-    alt: "gambar sepatu",
+    title: "Bangboo fanart from ZZZ",
+    desc: "Bangboo fanart with combination of japananese food",
+    alt: "Taiyaki food",
+    images: ["/portofolioWeb/img/gamabr2.png"],
   },
 
   {
     id: 5,
-    imgURL:
-      "https://img.goodfon.com/wallpaper/big/c/1b/noragami-art-yato-mech-bog.webp",
+    imgURL: "/portofolioWeb/img/webportofolio.png",
     tipe: "web",
     title: "Web Portofolio",
     desc: "Web portofolio dan deskripsi singkat diri",
     alt: "gambar sepatu",
+    imagesL: ["/portofolioWeb/img/webportofolio.png"],
+  },
+
+  {
+    id: 6,
+    imgURL: "/portofolioWeb/img/gambar1.png",
+    tipe: "illust",
+    title: "Bangboo fanart from ZZZ",
+    desc: "Bangboo fanart with combination of japananese food",
+    alt: "Taiyaki food",
+    images: ["/portofolioWeb/img/gambar1.png"],
+  },
+
+  {
+    id: 7,
+    imgURL: "/portofolioWeb/img/jimin1.png",
+    tipe: "illust",
+    title: "Bangboo fanart from ZZZ",
+    desc: "Bangboo fanart with combination of japananese food",
+    alt: "Taiyaki food",
+    images: ["/portofolioWeb/img/jimin1.png"],
+  },
+
+  {
+    id: 8,
+    imgURL: "/portofolioWeb/img/ppFox.png",
+    tipe: "illust",
+    title: "Fox",
+    desc: "Fox",
+    alt: "Taiyaki food",
+    images: ["/portofolioWeb/img/ppFox.png"],
   },
 ];
 
